@@ -1,0 +1,19 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /Users/panfeng/coder/mediaLean/FFmpegLearn/FFmpegCmake
+CMake Warning (dev) at /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.20/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (FFmpeg)
+  does not match the name of the calling package (FFMPEG).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  cmake/FindFFMPEG.cmake:147 (find_package_handle_standard_args)
+  CMakeLists.txt:9 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found ffmpeg
+-- ffmpeg include dir is /opt/homebrew/include
+-- ffmpeg libraries are /opt/homebrew/lib/libavcodec.dylib;/opt/homebrew/lib/libavformat.dylib;/opt/homebrew/lib/libavutil.dylib;/opt/homebrew/lib/libswresample.dylib
+-- Found OpenALSoft
+-- Found SndFile
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/panfeng/coder/mediaLean/FFmpegLearn/FFmpegCmake/cmake-build-debug

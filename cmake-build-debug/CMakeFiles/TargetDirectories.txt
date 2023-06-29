@@ -1,0 +1,3 @@
+/Users/panfeng/coder/mediaLean/FFmpegLearn/FFmpegCmake/cmake-build-debug/CMakeFiles/decode_audio.dir
+/Users/panfeng/coder/mediaLean/FFmpegLearn/FFmpegCmake/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/panfeng/coder/mediaLean/FFmpegLearn/FFmpegCmake/cmake-build-debug/CMakeFiles/edit_cache.dir
