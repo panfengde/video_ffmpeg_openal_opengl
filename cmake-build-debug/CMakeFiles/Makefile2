@@ -81,12 +81,12 @@ clean: CMakeFiles/decode_audio.dir/clean
 CMakeFiles/decode_audio.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/decode_audio.dir/build.make CMakeFiles/decode_audio.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/decode_audio.dir/build.make CMakeFiles/decode_audio.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/panfeng/coder/mediaLean/FFmpegLearn/FFmpegCmake/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target decode_audio"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/panfeng/coder/mediaLean/FFmpegLearn/FFmpegCmake/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target decode_audio"
 .PHONY : CMakeFiles/decode_audio.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/decode_audio.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/panfeng/coder/mediaLean/FFmpegLearn/FFmpegCmake/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/panfeng/coder/mediaLean/FFmpegLearn/FFmpegCmake/cmake-build-debug/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/decode_audio.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/panfeng/coder/mediaLean/FFmpegLearn/FFmpegCmake/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/decode_audio.dir/rule

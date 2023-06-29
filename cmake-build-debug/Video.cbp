@@ -5,7 +5,7 @@
 		<Option title="Video"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\cmake\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake\;CMake Files\configuration\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/panfeng/coder/mediaLean/FFmpegLearn/FFmpegCmake/cmake-build-debug"/>
@@ -25,6 +25,12 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/Users/panfeng/coder/mediaLean/FFmpegLearn/FFmpegCmake/./src"/>
+					<Add directory="/Users/panfeng/coder/mediaLean/FFmpegLearn/FFmpegCmake/./glad/include"/>
+					<Add directory="/Users/panfeng/coder/mediaLean/FFmpegLearn/FFmpegCmake/./includes"/>
+					<Add directory="/opt/homebrew/Cellar/glfw/3.3.4/include"/>
+					<Add directory="/opt/homebrew/Cellar/glm/0.9.9.8/include"/>
+					<Add directory="/Users/panfeng/coder/mediaLean/FFmpegLearn/FFmpegCmake/cmake-build-debug/configuration"/>
+					<Add directory="/opt/homebrew/Cellar/glew/2.2.0_1/include"/>
 					<Add directory="/opt/homebrew/include"/>
 					<Add directory="/opt/homebrew/Cellar/openal-soft/1.23.1/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
@@ -49,6 +55,12 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/Users/panfeng/coder/mediaLean/FFmpegLearn/FFmpegCmake/./src"/>
+					<Add directory="/Users/panfeng/coder/mediaLean/FFmpegLearn/FFmpegCmake/./glad/include"/>
+					<Add directory="/Users/panfeng/coder/mediaLean/FFmpegLearn/FFmpegCmake/./includes"/>
+					<Add directory="/opt/homebrew/Cellar/glfw/3.3.4/include"/>
+					<Add directory="/opt/homebrew/Cellar/glm/0.9.9.8/include"/>
+					<Add directory="/Users/panfeng/coder/mediaLean/FFmpegLearn/FFmpegCmake/cmake-build-debug/configuration"/>
+					<Add directory="/opt/homebrew/Cellar/glew/2.2.0_1/include"/>
 					<Add directory="/opt/homebrew/include"/>
 					<Add directory="/opt/homebrew/Cellar/openal-soft/1.23.1/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
@@ -86,7 +98,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/panfeng/coder/mediaLean/FFmpegLearn/FFmpegCmake/glad/src/glad.c">
+			<Option target="decode_audio"/>
+		</Unit>
 		<Unit filename="/Users/panfeng/coder/mediaLean/FFmpegLearn/FFmpegCmake/main.cpp">
+			<Option target="decode_audio"/>
+		</Unit>
+		<Unit filename="/Users/panfeng/coder/mediaLean/FFmpegLearn/FFmpegCmake/src/stb_image.cpp">
 			<Option target="decode_audio"/>
 		</Unit>
 		<Unit filename="/Users/panfeng/coder/mediaLean/FFmpegLearn/FFmpegCmake/CMakeLists.txt">
@@ -100,6 +118,9 @@
 		</Unit>
 		<Unit filename="/Users/panfeng/coder/mediaLean/FFmpegLearn/FFmpegCmake/cmake/FindSndFile.cmake">
 			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/panfeng/coder/mediaLean/FFmpegLearn/FFmpegCmake/configuration/root_directory.h.in">
+			<Option virtualFolder="CMake Files\configuration\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

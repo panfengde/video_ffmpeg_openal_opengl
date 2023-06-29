@@ -42,13 +42,39 @@ add_library(OpenALSoft INTERFACE)
 target_link_libraries(OpenALSoft INTERFACE ${OPENALSOFT_LIBRARY})
 target_include_directories(OpenALSoft INTERFACE ${OPENALSOFT_INCLUDE_DIR})
 
-#add_library(SndFile INTERFACE)
-#target_link_libraries(SndFile INTERFACE ${SNDFILE_LIBRARY})
-#target_include_directories(SndFile INTERFACE ${SNDFILE_INCLUDE_DIR})
 
-#mark_as_advanced(OPENALSOFT_INCLUDE_DIR OPENALSOFT_LIBRARY)
+# 包含头文件
+# glad项目已经加入进来了
+include_directories(./glad/include)
+include_directories(./includes)
+
+include_directories(/opt/homebrew/Cellar/glfw/3.3.4/include)
+link_directories(/opt/homebrew/Cellar/glfw/3.3.4/lib)
+# /opt/homebrew/Cellar/glm/0.9.9.8/include
 
 
-add_executable(decode_audio main.cpp)
-target_link_libraries(decode_audio ffmpeg_dep OpenALSoft )
+include_directories(/opt/homebrew/Cellar/glm/0.9.9.8/include)
+link_directories(/opt/homebrew/Cellar/glm/0.9.9.8/lib)
+
+configure_file(configuration/root_directory.h.in configuration/root_directory.h)
+include_directories(${CMAKE_BINARY_DIR}/configuration)
+
+# include_directories(/opt/homebrew/Cellar/freetype/2.11.0/include)
+link_directories(/opt/homebrew/Cellar/freetype/2.11.0/lib)
+
+include_directories(/opt/homebrew/Cellar/glew/2.2.0_1/include)
+# link_directories(/opt/homebrew/Cellar/glew/2.2.0_1/lib)
+
+
+add_executable(decode_audio
+        ./src/stb_image.cpp
+        ./glad/src/glad.c
+        ./main.cpp)
+
+target_link_libraries(decode_audio
+        ffmpeg_dep
+        OpenALSoft
+        glfw
+        freetype
+        )
 

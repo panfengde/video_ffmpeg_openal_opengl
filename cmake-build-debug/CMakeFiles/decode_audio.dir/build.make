@@ -66,9 +66,35 @@ include CMakeFiles/decode_audio.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/decode_audio.dir/flags.make
 
+CMakeFiles/decode_audio.dir/src/stb_image.cpp.o: CMakeFiles/decode_audio.dir/flags.make
+CMakeFiles/decode_audio.dir/src/stb_image.cpp.o: ../src/stb_image.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/panfeng/coder/mediaLean/FFmpegLearn/FFmpegCmake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/decode_audio.dir/src/stb_image.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/decode_audio.dir/src/stb_image.cpp.o -c /Users/panfeng/coder/mediaLean/FFmpegLearn/FFmpegCmake/src/stb_image.cpp
+
+CMakeFiles/decode_audio.dir/src/stb_image.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/decode_audio.dir/src/stb_image.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/panfeng/coder/mediaLean/FFmpegLearn/FFmpegCmake/src/stb_image.cpp > CMakeFiles/decode_audio.dir/src/stb_image.cpp.i
+
+CMakeFiles/decode_audio.dir/src/stb_image.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/decode_audio.dir/src/stb_image.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/panfeng/coder/mediaLean/FFmpegLearn/FFmpegCmake/src/stb_image.cpp -o CMakeFiles/decode_audio.dir/src/stb_image.cpp.s
+
+CMakeFiles/decode_audio.dir/glad/src/glad.c.o: CMakeFiles/decode_audio.dir/flags.make
+CMakeFiles/decode_audio.dir/glad/src/glad.c.o: ../glad/src/glad.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/panfeng/coder/mediaLean/FFmpegLearn/FFmpegCmake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/decode_audio.dir/glad/src/glad.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/decode_audio.dir/glad/src/glad.c.o -c /Users/panfeng/coder/mediaLean/FFmpegLearn/FFmpegCmake/glad/src/glad.c
+
+CMakeFiles/decode_audio.dir/glad/src/glad.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/decode_audio.dir/glad/src/glad.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/panfeng/coder/mediaLean/FFmpegLearn/FFmpegCmake/glad/src/glad.c > CMakeFiles/decode_audio.dir/glad/src/glad.c.i
+
+CMakeFiles/decode_audio.dir/glad/src/glad.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/decode_audio.dir/glad/src/glad.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/panfeng/coder/mediaLean/FFmpegLearn/FFmpegCmake/glad/src/glad.c -o CMakeFiles/decode_audio.dir/glad/src/glad.c.s
+
 CMakeFiles/decode_audio.dir/main.cpp.o: CMakeFiles/decode_audio.dir/flags.make
 CMakeFiles/decode_audio.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/panfeng/coder/mediaLean/FFmpegLearn/FFmpegCmake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/decode_audio.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/panfeng/coder/mediaLean/FFmpegLearn/FFmpegCmake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/decode_audio.dir/main.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/decode_audio.dir/main.cpp.o -c /Users/panfeng/coder/mediaLean/FFmpegLearn/FFmpegCmake/main.cpp
 
 CMakeFiles/decode_audio.dir/main.cpp.i: cmake_force
@@ -81,11 +107,15 @@ CMakeFiles/decode_audio.dir/main.cpp.s: cmake_force
 
 # Object files for target decode_audio
 decode_audio_OBJECTS = \
+"CMakeFiles/decode_audio.dir/src/stb_image.cpp.o" \
+"CMakeFiles/decode_audio.dir/glad/src/glad.c.o" \
 "CMakeFiles/decode_audio.dir/main.cpp.o"
 
 # External object files for target decode_audio
 decode_audio_EXTERNAL_OBJECTS =
 
+decode_audio: CMakeFiles/decode_audio.dir/src/stb_image.cpp.o
+decode_audio: CMakeFiles/decode_audio.dir/glad/src/glad.c.o
 decode_audio: CMakeFiles/decode_audio.dir/main.cpp.o
 decode_audio: CMakeFiles/decode_audio.dir/build.make
 decode_audio: /opt/homebrew/lib/libavcodec.dylib
@@ -94,7 +124,7 @@ decode_audio: /opt/homebrew/lib/libavutil.dylib
 decode_audio: /opt/homebrew/lib/libswresample.dylib
 decode_audio: /opt/homebrew/Cellar/openal-soft/1.23.1/lib/libopenal.dylib
 decode_audio: CMakeFiles/decode_audio.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/panfeng/coder/mediaLean/FFmpegLearn/FFmpegCmake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable decode_audio"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/panfeng/coder/mediaLean/FFmpegLearn/FFmpegCmake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable decode_audio"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/decode_audio.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

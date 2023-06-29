@@ -40,6 +40,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../cmake/FindFFMPEG.cmake"
   "../cmake/FindOpenALSoft.cmake"
   "../cmake/FindSndFile.cmake"
+  "../configuration/root_directory.h.in"
   )
 
 # The corresponding makefile is:
@@ -50,6 +51,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
+  "configuration/root_directory.h"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
